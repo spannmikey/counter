@@ -1,0 +1,16 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://ohmikeyy.github.io/counter",
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
