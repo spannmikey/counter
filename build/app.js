@@ -1,16 +1,47 @@
-const num = document.querySelector(".num");
+let num = document.querySelector(".num");
 const increment = document.querySelector(".btn-increase");
 const decrement = document.querySelector(".btn-decrease");
 const reset = document.querySelector(".btn-reset");
 
 // Global function that runs everything
-function run() {}
+
+function run() {
+	increase();
+	decrease();
+	resetValue();
+}
 
 // Increment values
-function increase() {}
+
+function increase() {
+	increment.onclick = () => {
+		let convertToNumberAndIncrement = Number(num.innerHTML++);
+		let displayNumberToScreen = convertToNumberAndIncrement.innerText;
+		return displayNumberToScreen;
+	};
+	console.log(num);
+}
 
 // Decrement values
-function decrease() {}
+
+function decrease() {
+	decrement.onclick = () => {
+		if (num.innerHTML >= 1) {
+			let convertToNumberAndIncrement = Number(num.innerHTML--);
+			let displayNumberToScreen = convertToNumberAndIncrement.innerText;
+			return displayNumberToScreen;
+		} else {
+			alert("You can not count negatives!");
+		}
+	};
+}
 
 // Reset values
-function reset() {}
+
+function resetValue() {
+	reset.onclick = () => (num.innerHTML = 0);
+}
+
+// run counter
+
+run();
