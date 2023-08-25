@@ -19,7 +19,6 @@ function increase() {
 		let displayNumberToScreen = convertToNumberAndIncrement.innerText;
 		return displayNumberToScreen;
 	};
-	console.log(num);
 }
 
 // Decrement values
