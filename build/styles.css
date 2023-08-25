@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: lightpink;
+	color: #fff;
+	font-family: "Poppins", sans-serif;
+}
+
+.counter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
+	width: 50%;
+	height: 50%;
+	border: 1px solid black;
+	border-radius: 2rem;
+}
+
+.counter h1 {
+	font-size: 3rem;
+}
+
+.counter span {
+	font-size: 3rem;
+}
+
+.counter > * {
+	margin-top: 1rem;
+}
+
+.buttons {
+	display: flex;
+	gap: 1rem;
+}
+
+.btn {
+	padding: 1rem;
+	border-radius: 1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.btn:hover {
+	background-color: #74ddfd;
+	color: #fff;
+}
